@@ -2,10 +2,7 @@
   "name": "react",
   "version": "1.0.0",
   "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "keywords": ["react", "starter"],
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "4.11.3",
@@ -19,14 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node --max_old_space_size=8192 <entry_file_path> --progress --env.<dev/prod>",
+
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
